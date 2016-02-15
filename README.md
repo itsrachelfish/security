@@ -10,6 +10,11 @@ grep -r "                                                                       
 ```
 
 Or you can look through diffs to spot long lines, though you might end up sifting through legitimate minified code as well.
+Or you can use this handy grep instead:
+
+```
+grep -rIE --exclude "*.js" --exclude "*.css" --exclude "*.svg" ".{500}" . 
+```
 
 
 ### Pretty cool command, btw:
